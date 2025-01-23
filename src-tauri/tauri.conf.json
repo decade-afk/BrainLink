@@ -1,21 +1,20 @@
 {
-  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "BrainLink",
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "brainlink",
   "version": "0.1.0",
-  "identifier": "com.brainlink.dev",
+  "identifier": "com.brainlink.app",
   "build": {
-    "frontendDist": "../dist",
-    "devUrl": "http://localhost:3000",
     "beforeDevCommand": "yarn dev",
-    "beforeBuildCommand": "yarn build"
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "yarn build",
+    "frontendDist": "../dist"
   },
   "app": {
     "windows": [
       {
-        "title": "BrainLink",
+        "title": "brainlink",
         "width": 800,
-        "height": 600,
-        "resizable": true
+        "height": 600
       }
     ],
     "security": {

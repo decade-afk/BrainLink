@@ -1,7 +1,6 @@
 import SideBar from "./components/SideBar";
 import { SideContextProvider } from "./stores/SideContextProvider";
-import MarkdownEditor from "./components/MarkdownEditor";
-import Md from "./assets/test.md?raw";
+import "./css/default.css";
 
 function App() {
   return (
@@ -9,9 +8,6 @@ function App() {
       <SideContextProvider>
         <SideBar />
       </SideContextProvider>
-      <div className="content-box">
-        <MarkdownEditor md={Md} />
-      </div>
     </>
   );
 }
